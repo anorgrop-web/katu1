@@ -3,12 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-const scrollingTexts = [
-  "Antibacteriano E Inodoro",
-  "Garantia De Devolução Do Dinheiro Em 30 Dias",
-  "Envio Rápido",
-  "Devolução Em 30 Dias",
-]
+const scrollingTexts = ["Antibacteriano e inodoro", "Garantia de 90 dias", "Envio rápido"]
 
 const CheckIcon = () => (
   <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -56,9 +51,14 @@ export default function CompetitorComparisonSection() {
       <div className="bg-black text-white py-2 overflow-hidden">
         <div className="whitespace-nowrap">
           <div className="inline-block animate-[scroll_40s_linear_infinite]">
-            {Array.from({ length: 4 }, (_, i) => (
-              <span key={i} className="text-sm font-medium px-16">
-                {scrollingTexts.join("                    ")}
+            {Array.from({ length: 8 }, (_, i) => (
+              <span key={i} className="text-sm font-medium">
+                {scrollingTexts.map((text, index) => (
+                  <span key={index}>
+                    <span className="px-8">{text}</span>
+                    <span className="text-gray-400">•</span>
+                  </span>
+                ))}
               </span>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function CompetitorComparisonSection() {
             <div className="flex items-center justify-center gap-4 sm:gap-8">
               <div className="flex-shrink-0">
                 <Image
-                  src="/titanium-cutting-board-clean-modern.png"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/titanium-cutting-board-clean-modern.png"
                   alt="Tábua de corte de titânio Katuchef"
                   width={150}
                   height={120}
@@ -103,7 +103,7 @@ export default function CompetitorComparisonSection() {
 
               <div className="bg-gray-100 rounded-lg p-4 sm:p-8 text-center w-32 h-24 sm:w-48 sm:h-32 flex flex-col items-center justify-center">
                 <Image
-                  src="/images/design-mode/Comparing-Our-Product_cutting.svg"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/Comparing-Our-Product_cutting.svg"
                   alt="Tábuas de corte tradicionais"
                   width={32}
                   height={32}

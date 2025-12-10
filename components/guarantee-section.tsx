@@ -28,7 +28,8 @@ export default function GuaranteeSection() {
 
         {/* Description */}
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-          Se você não estiver satisfeito com o produto, oferecemos uma política de devolução de dinheiro em até 90 dias. Envie seu pacote de volta e receba um reembolso total, sem perguntas.
+          Se você não estiver satisfeito com o produto, oferecemos uma política de devolução de dinheiro em até 90 dias.
+          Envie seu pacote de volta e receba um reembolso total, sem perguntas.
         </p>
 
         {/* Product Image with Dashed Border */}
@@ -36,7 +37,7 @@ export default function GuaranteeSection() {
           <div className="border-2 border-dashed border-gray-400 rounded-lg p-8 bg-white">
             <div className="relative w-full max-w-md mx-auto">
               <Image
-                src="/titanium-cutting-board-with-vegetables.png"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/titanium-cutting-board-with-vegetables.png"
                 alt="Tábua de corte de titânio com tomates e salsa"
                 width={400}
                 height={300}

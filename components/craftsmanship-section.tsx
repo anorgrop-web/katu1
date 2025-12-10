@@ -32,7 +32,7 @@ export default function CraftsmanshipSection() {
             <div className="order-1 md:order-2">
               <div className="relative">
                 <Image
-                  src="/images/design-mode/Stream-iframe%20videodelivery.gif"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/section3gif1.gif"
                   alt="Tábua de corte com marcas de uso mostrando resistência"
                   width={500}
                   height={600}
@@ -49,7 +49,7 @@ export default function CraftsmanshipSection() {
             <div className="order-1">
               <div className="relative">
                 <Image
-                  src="/images/design-mode/Pure%20Titanium%20Cutting%20Board.gif"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/section3gif2.gif"
                   alt="Pessoa cortando maçã na tábua de titânio"
                   width={500}
                   height={400}
@@ -87,7 +87,7 @@ export default function CraftsmanshipSection() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                     <Image
-                      src="/images/design-mode/1_Versatile-for-Any.svg"
+                      src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/1_Versatile-for-Any-Occasion%20%281%29.svg"
                       alt="Versatile for any occasion icon"
                       width={40}
                       height={40}
@@ -106,7 +106,7 @@ export default function CraftsmanshipSection() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                     <Image
-                      src="/images/design-mode/2_Built-to.svg"
+                      src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/2_Built-to-Last%20%281%29.svg"
                       alt="Built to last icon"
                       width={40}
                       height={40}
@@ -125,7 +125,7 @@ export default function CraftsmanshipSection() {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center">
                     <Image
-                      src="/images/design-mode/3_No-Upkeep.svg"
+                      src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/3_No-Upkeep-Needed%20%281%29.svg"
                       alt="No upkeep needed icon"
                       width={40}
                       height={40}
@@ -145,8 +145,8 @@ export default function CraftsmanshipSection() {
             <div className="order-1 md:order-2">
               <div className="relative">
                 <Image
-                  src="/images/design-mode/20250826_2034_Tabuas%20de%20Corte%20Elegantes_remix_01k3mbmn9meysrfewqn994zs3b.png"
-                  alt="Duas tábuas de titânio com alimentos separados"
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s4/section3gif3.png"
+                  alt="Tábua de corte com marcas de uso mostrando resistência"
                   width={500}
                   height={600}
                   className="w-full h-auto rounded-lg"

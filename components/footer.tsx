@@ -123,13 +123,31 @@ export default function Footer() {
             <div className="text-center mb-6">
               <p className="text-gray-400 text-sm mb-4">© 2025 Katuchef | Todos os direitos reservados</p>
               <div className="flex justify-center items-center gap-4 flex-wrap">
-                <img src="/paypal-logo.png" alt="PayPal" className="h-6" />
-                <img src="/visa-logo-generic.png" alt="Visa" className="h-6" />
-                <img src="/mastercard-logo.png" alt="Mastercard" className="h-6" />
-                <img src="/american-express-logo.png" alt="Amex" className="h-6" />
-                <img src="/apple-pay-logo.png" alt="Apple Pay" className="h-6" />
-                <img src="/diners-club-logo.png" alt="Diners" className="h-6" />
-                <img src="/klarna-logo.png" alt="Klarna" className="h-6" />
+                <img
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/card-pix.svg"
+                  alt="Pix"
+                  className="h-6"
+                />
+                <img
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/amex.Csr7hRoy.svg"
+                  alt="Amex"
+                  className="h-6"
+                />
+                <img
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/card-discover.svg"
+                  alt="Discover"
+                  className="h-6"
+                />
+                <img
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/card-mastercard.svg"
+                  alt="Mastercard"
+                  className="h-6"
+                />
+                <img
+                  src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/card-visa.svg"
+                  alt="Visa"
+                  className="h-6"
+                />
               </div>
             </div>
           </div>

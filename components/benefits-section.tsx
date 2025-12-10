@@ -5,7 +5,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/svgt1.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/svgt1%20%281%29.svg"
           alt="Titânio resistente a riscos"
           width={32}
           height={32}
@@ -17,7 +17,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/facasvg.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/facasvg%20%281%29.svg"
           alt="Titânio resistente a riscos"
           width={32}
           height={32}
@@ -29,7 +29,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/3_Antibacterial-and-Non.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/3_Antibacterial-and-Non.svg"
           alt="Titânio resistente a riscos"
           width={32}
           height={32}
@@ -41,7 +41,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/4_Heat-Proof.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/4_Heat-Proof.svg"
           alt="Titânio resistente a riscos"
           width={32}
           height={32}
@@ -53,10 +53,10 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/5_Double-Sided.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/5_Double-Sided.svg"
           alt="Titânio resistente a riscos"
-          width={32}
-          height={32}
+          width={38}
+          height={38}
           className="w-8 h-8"
         />
       ),
@@ -65,7 +65,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/6_Modern.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/6_Modern.svg"
           alt="Titânio resistente a riscos"
           width={38}
           height={38}
@@ -77,7 +77,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/7_Built-to-Last-a.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/7_Built-to-Last-a.svg"
           alt="Titânio resistente a riscos"
           width={38}
           height={38}
@@ -89,7 +89,7 @@ export default function BenefitsSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/8_Resistant-to-Odors-and.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s3/8_Resistant-to-Odors-and.svg"
           alt="Titânio resistente a riscos"
           width={38}
           height={38}
@@ -115,7 +115,7 @@ export default function BenefitsSection() {
           <div className="flex justify-center mb-12">
             <div className="relative w-64 h-80">
               <Image
-                src="/images/design-mode/tabuadetitanio.png"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/tabuadetitanio%20%281%29.png"
                 alt="Tábua de corte de titânio"
                 fill
                 className="object-contain"
@@ -149,7 +149,7 @@ export default function BenefitsSection() {
           <div className="flex justify-center">
             <div className="relative w-80 h-96">
               <Image
-                src="/images/design-mode/tabuadetitanio.png"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/tabuadetitanio%20%281%29.png"
                 alt="Tábua de corte de titânio"
                 fill
                 className="object-contain"

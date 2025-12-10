@@ -39,7 +39,7 @@ export default function ExpertSection() {
             {/* Cutting Board Image - Desktop Only */}
             <div className="hidden lg:block flex-shrink-0">
               <Image
-                src="/titanium-cutting-board-clean-modern.png"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/Designsemnome_82_400x%20%281%29.webp"
                 alt="Tábua de corte Katuchef"
                 width={120}
                 height={80}
@@ -99,7 +99,7 @@ export default function ExpertSection() {
           <div className="flex-shrink-0 order-1 lg:order-2">
             <div className="w-80 h-96 lg:w-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/design-mode/RXhwZXJ0LTUuanBn.jpg"
+                src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/RXhwZXJ0LTUuanBn.jpg"
                 alt="Mason Carter - Chef e Fundador da Katuchef"
                 width={384}
                 height={500}

@@ -52,7 +52,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
     },
     {
       type: "image",
-      src: "/titanium-cutting-board-close-up.png",
+      src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s1/titanium-cutting-board-close-up.png",
       alt: "Tábua de Corte de Titânio",
     },
   ]

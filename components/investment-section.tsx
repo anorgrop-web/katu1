@@ -5,7 +5,7 @@ export default function InvestmentSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/1_Antibacterial-and-Non-Toxic.svg"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/1_Antibacterial-and-Non-Toxic.svg"
           alt="Antibacterial and Non-Toxic Surface"
           width={64}
           height={64}
@@ -19,8 +19,8 @@ export default function InvestmentSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/2_Knife-Friendly.svg"
-          alt="Antibacterial and Non-Toxic Surface"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/2_Knife-Friendly.svg"
+          alt="Knife-Friendly Surface"
           width={64}
           height={64}
           className="w-16 h-16 mx-auto mb-4"
@@ -33,8 +33,8 @@ export default function InvestmentSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/3_Scratch-Resistance-and.svg"
-          alt="Antibacterial and Non-Toxic Surface"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/3_Scratch-Resistance-and.svg"
+          alt="Scratch-Resistance and Durability"
           width={64}
           height={64}
           className="w-16 h-16 mx-auto mb-4"
@@ -47,8 +47,8 @@ export default function InvestmentSection() {
     {
       icon: (
         <Image
-          src="/images/design-mode/4_Dual-Sided.svg"
-          alt="Antibacterial and Non-Toxic Surface"
+          src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/4_Dual-Sided.svg"
+          alt="Dual-Sided Design"
           width={64}
           height={64}
           className="w-16 h-16 mx-auto mb-4"

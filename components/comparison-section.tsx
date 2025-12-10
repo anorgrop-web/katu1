@@ -10,7 +10,7 @@ const comparisons = [
     id: "madeira",
     icon: (
       <Image
-        src="/images/design-mode/1_Wood_Bamboo.svg"
+        src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/1_Wood_Bamboo%20%281%29.svg"
         alt="Wood/Bamboo icon"
         width={32}
         height={32}
@@ -26,7 +26,7 @@ const comparisons = [
     id: "plastico",
     icon: (
       <Image
-        src="/images/design-mode/2_Plastic_Epicurean.svg"
+        src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/2_Plastic_Epicurean%20%281%29.svg"
         alt="Wood/Bamboo icon"
         width={32}
         height={32}
@@ -34,7 +34,7 @@ const comparisons = [
       />
     ),
     title: "Plástico/polímeros",
-    image: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/plastc.jpg",
+    image: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/section2plasticos.jpg",
     description:
       "Muitas tábuas de plástico contêm BPAs, ftalatos ou outros produtos químicos tóxicos que podem contaminar os alimentos durante o corte. Além disso, o plástico arranha facilmente, criando pequenas fissuras onde bactérias podem se acumular e proliferar.",
   },
@@ -42,7 +42,7 @@ const comparisons = [
     id: "vidro",
     icon: (
       <Image
-        src="/images/design-mode/3_Glass_Stone_Steel.svg"
+        src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/3_Glass_Stone_Steel%20%281%29.svg"
         alt="Wood/Bamboo icon"
         width={32}
         height={32}

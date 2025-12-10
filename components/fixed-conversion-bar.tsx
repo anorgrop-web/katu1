@@ -25,7 +25,7 @@ export default function FixedConversionBar({ isModalOpen }: FixedConversionBarPr
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
             <img
-              src="/images/design-mode/Designsemnome_82_400x.webp"
+              src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/Designsemnome_82_400x%20%281%29.webp"
               alt="Katuchef"
               className="w-10 h-10 object-cover rounded"
             />
