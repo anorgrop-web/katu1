@@ -18,7 +18,7 @@ export default function KitSelectionModal({ isOpen, onClose }: KitSelectionModal
       id: 1,
       title: "Tamanho pequeno 25cmx15cm",
       price: "R$59,90",
-      link: "https://seguro.katucheftitanio.com/r/VO2k11vZ10fp147z",
+      link: "https://seguro-katuchef.anorcorp.com/pequeno",
       image:
         "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/modal/ChatGPT%20Image%2027%20de%20ago.%20de%202025%2C%2010_50_13%20%282%29.png",
     },
@@ -26,7 +26,7 @@ export default function KitSelectionModal({ isOpen, onClose }: KitSelectionModal
       id: 2,
       title: "Tamanho médio 30cmx20cm",
       price: "R$69,90",
-      link: "https://seguro.katucheftitanio.com/r/n1B1oF1N9a012ZAYq47",
+      link: "https://seguro-katuchef.anorcorp.com/medio",
       image:
         "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/modal/ChatGPT%20Image%2027%20de%20ago.%20de%202025%2C%2011_01_50%20%281%29.png",
     },
@@ -34,7 +34,7 @@ export default function KitSelectionModal({ isOpen, onClose }: KitSelectionModal
       id: 3,
       title: "Tamanho grande 34cmx34cm",
       price: "R$79,90",
-      link: "https://seguro.katucheftitanio.com/r/1E711Yxh24B403jQ",
+      link: "https://seguro-katuchef.anorcorp.com/grande",
       image:
         "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/modal/ChatGPT%20Image%2027%20de%20ago.%20de%202025%2C%2011_04_04%20%282%29.png",
     },
@@ -43,7 +43,7 @@ export default function KitSelectionModal({ isOpen, onClose }: KitSelectionModal
       title: "Kit com 3 tamanhos",
       price: "de R$299,67 POR R$89,87",
       discount: "70%OFF",
-      link: "https://seguro.katucheftitanio.com/r/1AM0YhejI4r1F61T27j",
+      link: "https://seguro-katuchef.anorcorp.com/",
       image:
         "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/modal/Kit%20de%20T%C3%A1buas%20de%20Corte%20%282%29.png",
     },
