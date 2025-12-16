@@ -35,9 +35,9 @@ export default function TermosPage() {
             <strong>Prazos Estimados de Entrega:</strong>
           </p>
           <ul className="list-disc pl-5">
-            <li>Sudeste: 8 a 12 dias úteis.</li>
-            <li>Sul: 10 a 14 dias úteis.</li>
-            <li>Demais Regiões: 15 a 18 dias úteis.</li>
+            <li>Sudeste: 8 a 12 dias.</li>
+            <li>Sul: 10 a 14 dias.</li>
+            <li>Demais Regiões: 15 a 18 dias.</li>
           </ul>
           <p>O código de rastreamento será enviado ao seu e-mail ou WhatsApp assim que o pedido for postado.</p>
 

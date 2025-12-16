@@ -55,8 +55,7 @@ export default function TrocasPage() {
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">4. Reembolsos</h3>
           <p>
-            Após o recebimento e conferência do produto devolvido, o reembolso será processado em até 10 dias úteis no
-            mesmo método de pagamento original.
+            Após o recebimento e conferência do produto devolvido, o reembolso será processado em até 5 dias no mesmo método de pagamento original.
           </p>
         </div>
       </div>

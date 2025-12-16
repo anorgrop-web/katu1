@@ -36,16 +36,16 @@ export default function EnvioEntregaPage() {
           <p>O prazo de entrega varia de acordo com a sua localização:</p>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Capitais e regiões metropolitanas:</strong> 7 a 15 dias
+              <strong>Sudeste:</strong> 8 a 12 dias
             </li>
             <li>
-              <strong>Interior e outras regiões:</strong> 10 a 20 dias
+              <strong>Sul:</strong> 10 a 14 dias
+            </li>
+            <li>
+              <strong>Demais Regiões:</strong> 15 a 18 dias
             </li>
           </ul>
-          <p className="text-sm text-gray-500">
-            * Os prazos podem variar devido a fatores externos como feriados, condições climáticas ou atrasos nos
-            Correios/transportadoras.
-          </p>
+          <p className="text-sm text-gray-500">O código de rastreamento é enviado automaticamente após a postagem.</p>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">3. Frete</h3>
           <p>
