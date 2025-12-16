@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { useState, useRef } from "react"
 
 export default function TestimonialsSection() {
@@ -127,7 +129,8 @@ function VideoTestimonialCard({
   const [isPlaying, setIsPlaying] = useState(true)
   const videoRef = useRef<HTMLVideoElement>(null)
 
-  const toggleMute = () => {
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation()
     if (videoRef.current) {
       videoRef.current.muted = !isMuted
       setIsMuted(!isMuted)
@@ -145,18 +148,31 @@ function VideoTestimonialCard({
     }
   }
 
+  const handlePlay = () => setIsPlaying(true)
+  const handlePause = () => setIsPlaying(false)
+
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-sm">
       {/* Video Container */}
-      <div className="relative group">
-        <video ref={videoRef} src={testimonial.video} autoPlay loop muted playsInline className="w-full h-auto" />
+      <div className="relative cursor-pointer" onClick={togglePlayPause}>
+        <video
+          ref={videoRef}
+          src={testimonial.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-auto"
+          onPlay={handlePlay}
+          onPause={handlePause}
+        />
 
         {/* Video Controls Overlay */}
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors">
+        <div className="absolute inset-0 pointer-events-none">
           {/* Mute/Unmute Button */}
           <button
             onClick={toggleMute}
-            className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 transition-colors"
+            className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 transition-colors pointer-events-auto"
             aria-label={isMuted ? "Desmutar" : "Mutar"}
           >
             {isMuted ? (
@@ -186,22 +202,22 @@ function VideoTestimonialCard({
             )}
           </button>
 
-          {/* Play/Pause Button */}
-          <button
-            onClick={togglePlayPause}
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full p-4 transition-all opacity-0 group-hover:opacity-100"
+          <div
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/60 text-white rounded-full p-4 transition-opacity duration-300 ${
+              isPlaying ? "opacity-0" : "opacity-100"
+            }`}
             aria-label={isPlaying ? "Pausar" : "Reproduzir"}
           >
             {isPlaying ? (
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
             )}
-          </button>
+          </div>
         </div>
       </div>
 
