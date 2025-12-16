@@ -64,9 +64,7 @@ export default function Footer() {
               KATU<span className="text-red-500">CHEF</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              A tábua de corte Katuchef oferece uma superfície atóxica, higiênica e adequada para facas em todas as
-              refeições. Esqueça bactérias, manchas e trocas constantes – a Katuchef mantém sua cozinha mais limpa,
-              segura e pronta para tudo, desde jantares diários até aventuras de acampamento.
+              A tábua de corte Katuchef oferece uma superfície atóxica, higiênica e adequada para facas. Sua parceira em todas as refeições. Esqueça bactérias, manchas e trocas constantes – a Katuchef mantém sua cozinha mais limpa, segura e pronta para tudo, desde jantares diários, churrascos em fins de semana até aventuras de acampamento.
             </p>
           </div>
 
@@ -76,15 +74,15 @@ export default function Footer() {
             <div className="space-y-4 max-w-md mx-auto">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gray-400" />
-                <span>Envie-Nos Um E-Mail</span>
+                <span>Envie-nos um e-mail em: info@katucheftitanio.com    </span>
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="w-5 h-5 text-gray-400" />
-                <span>Chat Ao Vivo 24 Horas Por Dia, 7 Dias Por Semana</span>
+                <span>Chat ao vivo das 9:00 às 18:00    </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gray-400" />
-                <span>+1 (209) 806-4881</span>
+                <span>+55 (11) 99806-4881</span>
               </div>
             </div>
           </div>
@@ -106,7 +104,7 @@ export default function Footer() {
 
             <div>
               <div className="flex items-center justify-between mb-4">
-                <h4 className="font-semibold">ORDEM</h4>
+                <h4 className="font-semibold">PEDIDO</h4>
                 <ChevronDown className="w-5 h-5" />
               </div>
               <div className="space-y-3 text-gray-300">
