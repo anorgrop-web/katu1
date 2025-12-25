@@ -39,13 +39,12 @@ export default function TermosPage() {
             <li>Sul: 10 a 14 dias.</li>
             <li>Demais Regiões: 15 a 18 dias.</li>
           </ul>
-          <p>O código de rastreamento será enviado ao seu e-mail ou WhatsApp assim que o pedido for postado.</p>
+          <p>O código de rastreamento será enviado ao seu e-mail assim que o pedido for postado.</p>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">2. Suporte ao Cliente</h3>
           <p>Nosso atendimento funciona em horário comercial.</p>
           <ul className="list-disc pl-5">
             <li>E-mail: info@katucheftitanio.com</li>
-            <li>WhatsApp: +55 27 99640-2344</li>
           </ul>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">3. Legislação Aplicável</h3>

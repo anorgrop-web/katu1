@@ -45,8 +45,7 @@ export default function TrocasPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Solicitação:</strong> Envie um e-mail para info@katucheftitanio.com ou contate-nos via WhatsApp em
-              +55 27 99640-2344.
+              <strong>Solicitação:</strong> Envie um e-mail para info@katucheftitanio.com.
             </li>
             <li>
               <strong>Envio:</strong> Enviaremos instruções para envio ao nosso parceiro logístico nacional.
@@ -55,7 +54,8 @@ export default function TrocasPage() {
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">4. Reembolsos</h3>
           <p>
-            Após o recebimento e conferência do produto devolvido, o reembolso será processado em até 5 dias no mesmo método de pagamento original.
+            Após o recebimento e conferência do produto devolvido, o reembolso será processado em até 5 dias no mesmo
+            método de pagamento original.
           </p>
         </div>
       </div>
