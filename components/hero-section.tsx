@@ -163,23 +163,6 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
               </div>
             </div>
 
-            {/* Customer Satisfaction */}
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="flex -space-x-2">
-                {customerAvatars.map((avatar, i) => (
-                  <Image
-                    key={i}
-                    src={avatar || "/placeholder.svg"}
-                    alt={`Cliente satisfeito ${i + 1}`}
-                    width={32}
-                    height={32}
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  />
-                ))}
-              </div>
-              <span className="text-sm text-gray-600">Mais de 8 mil clientes satisfeitos</span>
-            </div>
-
             {/* Stock Status */}
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
@@ -264,23 +247,6 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                   </div>
                   <span className="text-lg text-gray-700">Elimina a contaminação cruzada de alimentos</span>
                 </div>
-              </div>
-
-              {/* Customer Satisfaction */}
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="flex -space-x-2">
-                  {customerAvatars.map((avatar, i) => (
-                    <Image
-                      key={i}
-                      src={avatar || "/placeholder.svg"}
-                      alt={`Cliente satisfeito ${i + 1}`}
-                      width={40}
-                      height={40}
-                      className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                    />
-                  ))}
-                </div>
-                <span className="text-gray-600">Mais de 8 mil clientes satisfeitos</span>
               </div>
 
               {/* Stock Status */}
