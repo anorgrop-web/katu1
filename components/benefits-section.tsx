@@ -36,7 +36,7 @@ export default function BenefitsSection() {
           className="w-8 h-8"
         />
       ),
-      text: "Antibacteriano e não tóxico",
+      text: "Superfície higiênica não porosa",
     },
     {
       icon: (
@@ -84,7 +84,7 @@ export default function BenefitsSection() {
           className="w-8 h-8"
         />
       ),
-      text: "Feito para durar a vida toda",
+      text: "Feito para durar muito tempo",
     },
     {
       icon: (
@@ -105,8 +105,8 @@ export default function BenefitsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Título e subtítulo */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Por que o titânio é a melhor escolha</h2>
-          <p className="text-lg text-gray-600 mb-6">Sem manchas, sem odores, sem bactérias</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Por que a Katuchef é uma escolhe segura? </h2>
+          <p className="text-lg text-gray-600 mb-6">Sem manchas, sem odores, fácil de limpar</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto"></div>
         </div>
 

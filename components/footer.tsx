@@ -16,7 +16,7 @@ export default function Footer() {
                 }}
               />
             </div>
-            <h3 className="font-semibold text-sm mb-1">TITÂNIO PURO</h3>
+            <h3 className="font-semibold text-sm mb-1">MATERIAL DE ALTA QUALIDADE </h3>
           </div>
 
           <div className="text-center">
@@ -27,7 +27,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <h3 className="font-semibold text-sm mb-1">DURABILIDADE VITALÍCIA</h3>
+            <h3 className="font-semibold text-sm mb-1">ALTA DURABILIDADE</h3>
           </div>
 
           <div className="text-center">
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <h3 className="font-semibold text-sm mb-1">ANTIBACTERIANO E LIVRE DE BPA</h3>
+            <h3 className="font-semibold text-sm mb-1">SUPERFÍCIE HIGIÊNICA E LIVRE DE BPA</h3>
           </div>
         </div>
       </div>
@@ -66,9 +66,8 @@ export default function Footer() {
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
               A tábua de corte Katuchef oferece uma superfície atóxica, higiênica e adequada para facas. Sua parceira em
-              todas as refeições. Esqueça bactérias, manchas e trocas constantes – a Katuchef mantém sua cozinha mais
-              limpa, segura e pronta para tudo, desde jantares diários, churrascos em fins de semana até aventuras de
-              acampamento.
+              todas as refeições. Esqueça manchas e trocas constantes – a Katuchef mantém sua cozinha mais limpa, segura
+              e pronta para tudo, desde jantares diários, churrascos em fins de semana até aventuras de acampamento.
             </p>
           </div>
 

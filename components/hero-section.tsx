@@ -17,7 +17,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
   const mediaItems = [
     {
       type: "image",
-      src: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/image%20813.png",
+      src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/katu12d.jfif",
       alt: "Tábua de Corte de Titânio",
     },
     {
@@ -45,11 +45,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
       src: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/pg1edt.gif",
       alt: "Tábua de Corte de Titânio",
     },
-    {
-      type: "image",
-      src: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/ChatGPT%20Image%2026%20de%20ago.%20de%202025%2C%2022_45_27.png",
-      alt: "Tábua de Corte de Titânio",
-    },
+
     {
       type: "image",
       src: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s1/titanium-cutting-board-close-up.png",
@@ -83,7 +79,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
           {/* Mobile Layout */}
           <div className="lg:hidden">
             {/* Rating */}
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="hidden flex items-center space-x-2 mb-4">
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -131,7 +127,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
 
             {/* Product Title */}
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
-              Tábua De Corte 100% Titânio Puro: Chega De Microplásticos, Bactérias Ou Facas Cegas
+              Tábua De Corte 100% Titânio Puro: Chega De Microplásticos Ou Facas Cegas
             </h1>
 
             {/* Product Description */}
@@ -145,7 +141,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 <div className="bg-blue-100 rounded-full p-1">
                   <Check className="h-4 w-4 text-blue-600" />
                 </div>
-                <span className="text-gray-700">Previne riscos de microplásticos</span>
+                <span className="text-gray-700">Superfície higiênica não porosa</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="bg-blue-100 rounded-full p-1">
@@ -196,7 +192,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
               className="w-full bg-emerald-600 text-white py-4 text-lg font-bold rounded-xl mb-8 flex items-center justify-center gap-2"
             >
               <ShoppingCart className="h-5 w-5" />
-              ESCOLHER MEU KIT
+              ESCOLHA O SEU KIT
             </Button>
 
             {/* Feature Icons */}
@@ -211,7 +207,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <span className="text-2xl">🛡️</span>
                 </div>
-                <p className="text-xs font-medium text-gray-700">DURABILIDADE VITALÍCIA</p>
+                <p className="text-xs font-medium text-gray-700">ALTA DURABILIDADE</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
@@ -223,7 +219,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <span className="text-2xl">🦠</span>
                 </div>
-                <p className="text-xs font-medium text-gray-700">ANTIBACTERIANO E LIVRE DE BPA</p>
+                <p className="text-xs font-medium text-gray-700">SUPERFÍCIE HIGIÊNICA E LIVRE DE BPA</p>
               </div>
             </div>
           </div>
@@ -232,20 +228,9 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
           <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
             {/* Left Column - Product Info */}
             <div>
-              {/* Rating */}
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="text-lg font-medium">4.7</span>
-                <span className="text-gray-600">| Mais de 1000 avaliações verificadas</span>
-              </div>
-
               {/* Product Title */}
               <h1 className="text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                Tábua De Corte 100% Titânio Puro: Chega De Microplásticos, Bactérias Ou Facas Cegas
+                Tábua De Corte Higiênica e segura para o dia a dia
               </h1>
 
               {/* Product Description */}
@@ -259,7 +244,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                   <div className="bg-blue-100 rounded-full p-2">
                     <Check className="h-5 w-5 text-blue-600" />
                   </div>
-                  <span className="text-lg text-gray-700">Previne riscos dos microplásticos</span>
+                  <span className="text-lg text-gray-700">Superfície higiênica não porosa</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="bg-blue-100 rounded-full p-2">
@@ -310,7 +295,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 className="w-full bg-emerald-600 text-white py-6 text-xl font-bold rounded-xl mb-12 flex items-center justify-center gap-3"
               >
                 <ShoppingCart className="h-6 w-6" />
-                ESCOLHER MEU KIT
+                ESCOLHA O SEU KIT
               </Button>
 
               {/* Feature Icons */}
@@ -325,7 +310,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                   <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <span className="text-3xl">🛡️</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700">DURABILIDADE VITALÍCIA</p>
+                  <p className="text-sm font-medium text-gray-700">ALTA DURABILIDADE</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">
@@ -337,7 +322,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                   <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <span className="text-3xl">🦠</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700">ANTIBACTERIANO E LIVRE DE BPA</p>
+                  <p className="text-sm font-medium text-gray-700">SUPERFÍCIE HIGIÊNICA E LIVRE DE BPA</p>
                 </div>
               </div>
             </div>

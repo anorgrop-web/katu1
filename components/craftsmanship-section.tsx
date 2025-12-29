@@ -7,7 +7,7 @@ export default function CraftsmanshipSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-            Artesanato em titânio puro para uma cozinha mais limpa e segura
+            Produto de alta qualidade para uma cozinha mais limpa e segura
           </h2>
           <p className="text-gray-600 text-lg mb-6 max-w-3xl mx-auto">
             Transforme a preparação das suas refeições com a tábua de corte higiênica e durável da Katuchef
@@ -15,18 +15,18 @@ export default function CraftsmanshipSection() {
           <div className="w-16 h-1 bg-gray-400 mx-auto"></div>
         </div>
 
-        {/* First Feature - Sem germes, bactérias ou microplásticos */}
+        {/* First Feature - Superfície higiênica e livre de microplásticos */}
         <div className="mb-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                Sem germes, bactérias ou microplásticos
+                Superfície higiênica e livre de microplásticos
               </h3>
               <div className="w-12 h-1 bg-gray-400 mb-6"></div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                A superfície antibacteriana do Katuchef mantém sua cozinha mais limpa e segura, impedindo o acúmulo de
-                bactérias. Feito de titânio atóxico, o Katuchef é livre de produtos químicos nocivos e garante um
-                preparo de refeições mais seguro para você e sua família.
+                A superfície não porosa do Katuchef facilita a limpeza e mantém sua cozinha mais organizada. Feito de
+                titânio atóxico, o Katuchef é livre de produtos químicos nocivos e garante um preparo de refeições mais
+                seguro para você e sua família.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -59,7 +59,7 @@ export default function CraftsmanshipSection() {
             </div>
             <div className="order-2">
               <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">
-                Elimina a contaminação cruzada de alimentos
+                Previne a contaminação cruzada de alimentos
               </h3>
               <div className="w-12 h-1 bg-gray-400 mb-6"></div>
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -74,7 +74,7 @@ export default function CraftsmanshipSection() {
         <div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Titânio cortado a laser</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">{"Amigavel com as facas"}</h3>
               <div className="w-12 h-1 bg-gray-400 mb-6"></div>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
                 Suas facas vão adorar Katuchef tanto quanto você. Ao contrário das tábuas de vidro, que perdem o fio
@@ -116,8 +116,7 @@ export default function CraftsmanshipSection() {
                   <div>
                     <h4 className="font-semibold text-black mb-1">Construído para durar</h4>
                     <p className="text-gray-600">
-                      Feito de titânio puro, o Katuchef resiste a arranhões, deformações e desgaste, proporcionando uma
-                      vida inteira de uso confiável.
+                      Feito de titânio puro, o Katuchef resiste a arranhões, deformações e desgaste, proporcionando um uso confiável.
                     </p>
                   </div>
                 </div>

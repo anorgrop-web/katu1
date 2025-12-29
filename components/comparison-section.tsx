@@ -3,7 +3,11 @@
 import { useState } from "react"
 import Image from "next/image"
 
-const scrollingTexts = ["Garantia De Devolução Do Dinheiro Em 90 Dias", "Antibacteriano E Inodoro", "Envio Rápido"]
+const scrollingTexts = [
+  "Garantia De Devolução Do Dinheiro Em 90 Dias",
+  "Superfície Higiênica E Inodora",
+  "Envio Rápido",
+]
 
 const comparisons = [
   {
@@ -20,7 +24,7 @@ const comparisons = [
     title: "Madeira/Bambu",
     image: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/madeira1.jpg",
     description:
-      "Materiais naturais podem permitir o crescimento de bactérias e mofo em ranhuras e cortes, mesmo que invisíveis, o que pode contaminar seus alimentos com o tempo, causando mal-estar. Eles também absorvem odores e mancham facilmente.",
+      "Materiais naturais podem acumular resíduos em ranhuras e cortes, mesmo que invisíveis. Eles também absorvem odores e mancham facilmente, exigindo manutenção frequente.",
   },
   {
     id: "plastico",
@@ -36,7 +40,7 @@ const comparisons = [
     title: "Plástico/polímeros",
     image: "https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/section2plasticos.jpg",
     description:
-      "Muitas tábuas de plástico contêm BPAs, ftalatos ou outros produtos químicos tóxicos que podem contaminar os alimentos durante o corte. Além disso, o plástico arranha facilmente, criando pequenas fissuras onde bactérias podem se acumular e proliferar.",
+      "Tábuas de plástico arranham facilmente, criando pequenas fissuras onde resíduos podem se acumular. Com o tempo, essas marcas de corte profundas dificultam a limpeza completa da superfície.",
   },
   {
     id: "vidro",
@@ -116,7 +120,7 @@ export default function ComparisonSection() {
       <div className="bg-white py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">
-            A maioria das tábuas estão prejudicando sua saúde e suas facas
+            Por que as tábuas tradicionais de madeira e plástico ficaram no passado?
           </h2>
 
           <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-4">

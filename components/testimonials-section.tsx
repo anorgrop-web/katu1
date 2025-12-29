@@ -47,7 +47,7 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="w-full py-16 px-4 bg-gray-50">
+    <section className="hidden w-full py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -56,8 +56,8 @@ export default function TestimonialsSection() {
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-8"></div>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Milhares de clientes satisfeitos confiam na Katuchef por sua durabilidade e segurança. Esqueça as tábuas de
-            corte propensas a bactérias e as trocas constantes. Com esta tábua de corte de titânio de alta qualidade,
-            você pode preparar refeições com confiança, sabendo que tem uma tábua de corte mais limpa e durável.
+            corte que acumulam marcas e as trocas constantes. Com esta tábua de corte de titânio de alta qualidade, você
+            pode preparar refeições com confiança, sabendo que tem uma tábua de corte mais limpa e durável.
           </p>
         </div>
 

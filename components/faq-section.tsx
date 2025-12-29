@@ -6,12 +6,12 @@ const faqs = [
   {
     question: "Quais São Os Benefícios De Usar A Tábua De Corte Katuchef?",
     answer:
-      "A tábua de corte Katuchef é altamente durável, resistente a arranhões e amassados, o que garante longevidade. A superfície de titânio não porosa previne o acúmulo de bactérias e permite um ambiente higiênico para o preparo de alimentos. Essas tábuas são delicadas com as facas, ajudando a manter o fio da lâmina ao longo do tempo.",
+      "A tábua de corte Katuchef é altamente durável, resistente a arranhões e amassados, o que garante longevidade. A superfície de titânio não porosa facilita a limpeza e proporciona um ambiente higiênico para o preparo de alimentos. Essas tábuas são delicadas com as facas, ajudando a manter o fio da lâmina ao longo do tempo.",
   },
   {
     question: "A Tábua De Corte Katuchef É Segura Para Uso?",
     answer:
-      "Sim, o Katuchef é seguro para todos os tipos de preparo de alimentos. O material de titânio não é tóxico e não libera substâncias químicas nocivas para os alimentos. Sua natureza não porosa também significa que não abriga bactérias, tornando-o uma escolha higiênica para sua cozinha.",
+      "Sim, o Katuchef é seguro para todos os tipos de preparo de alimentos. O material de titânio não é tóxico e não libera substâncias químicas nocivas para os alimentos. Sua natureza não porosa facilita a limpeza, tornando-o uma escolha higiênica para sua cozinha.",
   },
   {
     question: "Como Faço A Limpeza E A Manutenção Do Meu Katuchef?",

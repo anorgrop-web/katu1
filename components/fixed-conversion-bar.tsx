@@ -45,7 +45,7 @@ export default function FixedConversionBar({ isModalOpen }: FixedConversionBarPr
           onClick={scrollToHero}
           className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm whitespace-nowrap flex-shrink-0"
         >
-          Ganhe 70% OFF!
+          ESCOLHA O KIT
         </Button>
       </div>
     </div>

@@ -6,15 +6,15 @@ export default function InvestmentSection() {
       icon: (
         <Image
           src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/s5/1_Antibacterial-and-Non-Toxic.svg"
-          alt="Antibacterial and Non-Toxic Surface"
+          alt="Superfície Higiênica"
           width={64}
           height={64}
           className="w-16 h-16 mx-auto mb-4"
         />
       ),
-      title: "Superfície antibacteriana e não tóxica",
+      title: "Superfície higiênica e não tóxica",
       description:
-        "Ao contrário da madeira ou de outros materiais, a superfície não porosa do titânio impede que bactérias fiquem presas em seu interior. Basta enxaguar com água e pronto.",
+        "Ao contrário da madeira ou de outros materiais, a superfície não porosa do titânio facilita a limpeza. Basta enxaguar com água e pronto.",
     },
     {
       icon: (
@@ -42,7 +42,7 @@ export default function InvestmentSection() {
       ),
       title: "Resistência a riscos e durabilidade",
       description:
-        "O Katuchef foi projetado para suportar o uso diário sem apresentar sinais de desgaste. Ele resiste a arranhões, amassados e deformações, e permanece em ótimas condições, independentemente de quanto você o prepare. Durará a vida toda.",
+        "O Katuchef foi projetado para suportar o uso diário sem apresentar sinais de desgaste. Ele resiste a arranhões, amassados e deformações, e permanece em ótimas condições por muito tempo.",
     },
     {
       icon: (
@@ -66,9 +66,9 @@ export default function InvestmentSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Invista em uma tábua de corte que durará a vida toda
+            Invista em qualidade premium para sua cozinha
           </h2>
-          <p className="text-lg text-gray-600 mb-6">Esta tábua de corte de titânio cuida de tudo na sua cozinha</p>
+          <p className="text-lg text-gray-600 mb-6">Esta tábua de corte cuida de tudo na sua cozinha</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-8"></div>
           <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
             As tábuas de corte Katuchef são projetadas para oferecer a você a mais alta qualidade no preparo de

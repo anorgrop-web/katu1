@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
-const scrollingTexts = ["Antibacteriano e inodoro", "Garantia de 90 dias", "Envio rápido"]
+const scrollingTexts = ["Superfície higiênica e inodora", "Garantia de 90 dias", "Envio rápido"]
 
 const CheckIcon = () => (
   <svg className="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -36,12 +36,12 @@ export default function CompetitorComparisonSection() {
   }, [])
 
   const comparisonItems = [
-    { feature: "Propriedades antibacterianas", katuchef: true, competitor: false },
-    { feature: "Livre de BPA e toxinas", katuchef: true, competitor: false },
+    { feature: "Superfície higiênica não porosa", katuchef: true, competitor: false },
+    { feature: "Livre de BPA", katuchef: true, competitor: false },
     { feature: "Pode ser lavado na máquina de lavar louça", katuchef: true, competitor: false },
     { feature: "Resistente a odores e manchas", katuchef: true, competitor: false },
     { feature: "Design amigável à faca", katuchef: true, competitor: true },
-    { feature: "Durável para toda a vida", katuchef: true, competitor: false },
+    { feature: "Alta durabilidade", katuchef: true, competitor: false },
     { feature: "Dupla face", katuchef: true, competitor: true },
   ]
 
@@ -74,9 +74,9 @@ export default function CompetitorComparisonSection() {
           <p className="text-lg text-gray-600 mb-6">Nenhum outro produto se compara</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-8"></div>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Quando se trata de saúde, segurança e durabilidade, nenhuma tábua de corte se compara. Tábuas de madeira e
-            plástico abrigam bactérias, liberam toxinas e se desgastam rapidamente – a Katuchef revoluciona o mercado
-            com sua superfície estéril e resistente.
+            Quando se trata de praticidade, segurança e durabilidade, nenhuma tábua de corte se compara. Tábuas de
+            madeira e plástico acumulam marcas de corte e se desgastam rapidamente – a Katuchef revoluciona o mercado
+            com sua superfície resistente e fácil de limpar.
           </p>
         </div>
 

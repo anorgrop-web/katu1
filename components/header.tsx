@@ -15,7 +15,7 @@ export default function Header() {
     <>
       {/* Top Banner */}
       <div className="bg-black text-white text-center py-2 px-4">
-        <p className="text-sm font-medium">OFERTA ESPECIAL POR TEMPO LIMITADO | ATÉ 70% DE DESCONTO</p>
+        <p className="text-sm font-medium">OFERTA ESPECIAL</p>
       </div>
 
       {/* Benefits Bar - Desktop */}
