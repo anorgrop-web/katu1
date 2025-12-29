@@ -304,7 +304,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                   <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                     <span className="text-3xl">⚪</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700">TITÂNIO PURO</p>
+                  <p className="text-sm font-medium text-gray-700">MATERIAL ULTRA RESISTENTE </p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-3">

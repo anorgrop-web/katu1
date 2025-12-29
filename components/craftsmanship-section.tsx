@@ -116,7 +116,7 @@ export default function CraftsmanshipSection() {
                   <div>
                     <h4 className="font-semibold text-black mb-1">Construído para durar</h4>
                     <p className="text-gray-600">
-                      Feito de titânio puro, o Katuchef resiste a arranhões, deformações e desgaste, proporcionando um uso confiável.
+                       A Katuchef resiste a arranhões, deformações e desgaste, proporcionando um uso confiável.
                     </p>
                   </div>
                 </div>
