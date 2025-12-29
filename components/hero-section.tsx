@@ -127,7 +127,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
 
             {/* Product Title */}
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
-              Tábua De Corte 100% Titânio Puro: Chega De Microplásticos Ou Facas Cegas
+              Tábua De Corte Higiênica e segura para o dia a dia
             </h1>
 
             {/* Product Description */}
@@ -147,7 +147,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 <div className="bg-blue-100 rounded-full p-1">
                   <Check className="h-4 w-4 text-blue-600" />
                 </div>
-                <span className="text-gray-700">Resiste a bactérias e odores</span>
+                <span className="text-gray-700">Anti bactérias e odores</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="bg-blue-100 rounded-full p-1">
@@ -213,7 +213,7 @@ export default function HeroSection({ isModalOpen, setIsModalOpen }: HeroSection
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
                   <span className="text-2xl">💰</span>
                 </div>
-                <p className="text-xs font-medium text-gray-700">GARANTIA DE 90 DIAS</p>
+                <p className="text-xs font-medium text-gray-700">GARANTIA DE REEMBOLSO DE 90 DIAS</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-2">
