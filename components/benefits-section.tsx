@@ -105,7 +105,9 @@ export default function BenefitsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Título e subtítulo */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Por que a Katuchef é uma escolhe segura? </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Por que a TitanChef é uma escolha segura?{" "}
+          </h2>
           <p className="text-lg text-gray-600 mb-6">Sem manchas, sem odores, fácil de limpar</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto"></div>
         </div>

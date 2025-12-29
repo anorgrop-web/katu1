@@ -23,7 +23,7 @@ const ReviewsSection = () => {
       recommended: true,
       title: "Ótimo para chefs do dia a dia",
       content:
-        "Cozinho todos os dias, e o Katuchef foi a melhor atualização para a nossa cozinha. É leve, fácil de limpar e adoro que não deforme nem manche como minhas antigas tábuas de plástico/madeira.",
+        "Cozinho todos os dias, e o TitanChef foi a melhor atualização para a nossa cozinha. É leve, fácil de limpar e adoro que não deforme nem manche como minhas antigas tábuas de plástico/madeira.",
       helpful: 24,
       notHelpful: 0,
     },
@@ -62,7 +62,7 @@ const ReviewsSection = () => {
       recommended: true,
       title: "Cozinha mais limpa e segura",
       content:
-        "Depois de aprender sobre os problemas das tábuas de plástico com marcas de corte, mudei para Katuchef. Me sinto muito melhor sabendo que estou preparando comida em uma superfície higiênica. Além disso, é muito fácil de limpar.",
+        "Depois de aprender sobre os problemas das tábuas de plástico com marcas de corte, mudei para TitanChef. Me sinto muito melhor sabendo que estou preparando comida em uma superfície higiênica. Além disso, é muito fácil de limpar.",
       helpful: 14,
       notHelpful: 0,
     },
@@ -88,7 +88,7 @@ const ReviewsSection = () => {
       recommended: true,
       title: "Qualidade excepcional",
       content:
-        "Já usei muitas tábuas de corte ao longo dos anos, mas a Katuchef é única, sério. Ela é praticamente indestrutível, e adoro saber que não terei que substituí-la tão cedo.",
+        "Já usei muitas tábuas de corte ao longo dos anos, mas a TitanChef é única, sério. Ela é praticamente indestrutível, e adoro saber que não terei que substituí-la tão cedo.",
       helpful: 12,
       notHelpful: 0,
     },
@@ -101,7 +101,7 @@ const ReviewsSection = () => {
       recommended: true,
       title: "Incrível para cozinhas movimentadas",
       content:
-        "Tenho um pequeno negócio de buffet, e o Katuchef tem sido perfeito para manter tudo limpo e eficiente. Não mancha, não cheira e é resistente o suficiente para suportar o uso constante. Nota 10/10.",
+        "Tenho um pequeno negócio de buffet, e o TitanChef tem sido perfeito para manter tudo limpo e eficiente. Não mancha, não cheira e é resistente o suficiente para suportar o uso constante. Nota 10/10.",
       helpful: 7,
       notHelpful: 0,
     },
@@ -114,7 +114,7 @@ const ReviewsSection = () => {
       recommended: true,
       title: "Ferramenta excelente e acessível",
       content:
-        "É lindo, funcional e deixa minha cozinha com um toque muito mais sofisticado. Não imaginei que uma tábua de corte pudesse ficar tão bonita, mas Katuchef me provou o contrário, haha.",
+        "É lindo, funcional e deixa minha cozinha com um toque muito mais sofisticado. Não imaginei que uma tábua de corte pudesse ficar tão bonita, mas TitanChef me provou o contrário, haha.",
       helpful: 9,
       notHelpful: 0,
     },
@@ -160,8 +160,8 @@ const ReviewsSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Usuários felizes com a Katuchef</h2>
-          <p className="text-lg text-gray-600 mb-6">Leia as avaliações de clientes satisfeitos com a Katuchef</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Usuários felizes com a TitanChef</h2>
+          <p className="text-lg text-gray-600 mb-6">Leia as avaliações de clientes satisfeitos com a TitanChef</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-12"></div>
         </div>
 

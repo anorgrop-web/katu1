@@ -26,7 +26,7 @@ export default function FixedConversionBar({ isModalOpen }: FixedConversionBarPr
           <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
             <img
               src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/kat/lp/Designsemnome_82_400x%20%281%29.webp"
-              alt="Katuchef"
+              alt="TitanChef"
               className="w-10 h-10 object-cover rounded"
             />
           </div>
@@ -37,7 +37,7 @@ export default function FixedConversionBar({ isModalOpen }: FixedConversionBarPr
               ))}
               <span className="text-sm font-semibold ml-1">4.7</span>
             </div>
-            <div className="text-sm font-medium">Katuchef</div>
+            <div className="text-sm font-medium">TitanChef</div>
           </div>
         </div>
 

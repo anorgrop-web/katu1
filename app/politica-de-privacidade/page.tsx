@@ -38,7 +38,7 @@ export default function PrivacidadePage() {
           </p>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">3. Contato</h3>
-          <p>Para solicitar exclusão ou alteração de dados, contate: info@katucheftitanio.com.</p>
+          <p>Para solicitar exclusão ou alteração de dados, contate: info@titanchefcut.com.</p>
         </div>
       </div>
       <Footer />

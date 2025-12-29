@@ -27,8 +27,8 @@ export default function ContatoPage() {
             <Mail className="w-6 h-6 text-red-500 mt-0.5" />
             <div>
               <h2 className="font-semibold text-gray-900 mb-1">E-mail</h2>
-              <a href="mailto:info@katucheftitanio.com" className="text-red-500 hover:underline">
-                info@katucheftitanio.com
+              <a href="mailto:info@titanchefcut.com" className="text-red-500 hover:underline">
+                info@titanchefcut.com
               </a>
               <p className="text-gray-500 text-sm mt-1">Responderemos em até 24 horas úteis.</p>
             </div>
@@ -46,7 +46,7 @@ export default function ContatoPage() {
 
         <div className="mt-10 pt-6 border-t border-gray-200">
           <p className="text-gray-500 text-sm">
-            <strong>Katuchef</strong> é uma marca operada por Anor Commerce LLC.
+            <strong>TitanChef</strong> é uma marca operada por Anor Commerce LLC.
             <br />
             Endereço: 1209 Mountain Road Place Northeast, Albuquerque, New Mexico, 87110, USA.
           </p>
