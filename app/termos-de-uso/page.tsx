@@ -45,6 +45,7 @@ export default function TermosPage() {
           <p>Nosso atendimento funciona em horário comercial.</p>
           <ul className="list-disc pl-5">
             <li>E-mail: info@katucheftitanio.com</li>
+            <li>WhatsApp: +55 27 99640-2344</li>
           </ul>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">3. Legislação Aplicável</h3>

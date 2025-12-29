@@ -45,7 +45,8 @@ export default function TrocasPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Solicitação:</strong> Envie um e-mail para info@katucheftitanio.com.
+              <strong>Solicitação:</strong> Envie um e-mail para info@katucheftitanio.com ou entre em contato pelo
+              WhatsApp: +55 27 99640-2344.
             </li>
             <li>
               <strong>Envio:</strong> Enviaremos instruções para envio ao nosso parceiro logístico nacional.

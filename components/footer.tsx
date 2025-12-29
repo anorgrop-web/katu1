@@ -1,4 +1,4 @@
-import { ChevronDown, Mail, MessageCircle } from "lucide-react"
+import { ChevronDown, Mail, MessageCircle, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -83,6 +83,10 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <MessageCircle className="w-5 h-5 text-gray-400" />
                 <span>Chat ao vivo das 9:00 às 18:00</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-gray-400" />
+                <span>WhatsApp: +55 27 99640-2344</span>
               </div>
             </div>
           </div>

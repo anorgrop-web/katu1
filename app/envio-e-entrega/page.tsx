@@ -69,9 +69,14 @@ export default function EnvioEntregaPage() {
             Caso ocorra algum problema com a entrega (extravio, dano durante o transporte, etc.), entre em contato
             conosco:
           </p>
-          <p>
-            <strong>E-mail:</strong> info@katucheftitanio.com
-          </p>
+          <ul className="list-disc pl-5">
+            <li>
+              <strong>E-mail:</strong> info@katucheftitanio.com
+            </li>
+            <li>
+              <strong>WhatsApp:</strong> +55 27 99640-2344
+            </li>
+          </ul>
           <p>Nossa equipe está pronta para resolver qualquer situação da melhor forma possível.</p>
         </div>
       </div>
