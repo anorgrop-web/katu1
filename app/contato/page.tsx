@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { ArrowLeft, Mail, Clock } from "lucide-react"
+import { ArrowLeft, Mail, Clock, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function ContatoPage() {
@@ -23,6 +23,17 @@ export default function ContatoPage() {
         </p>
 
         <div className="space-y-6">
+          <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+            <Phone className="w-6 h-6 text-red-500 mt-0.5" />
+            <div>
+              <h2 className="font-semibold text-gray-900 mb-1">Telefone / WhatsApp</h2>
+              <a href="tel:+5527996402344" className="text-red-500 hover:underline">
+                +55 27 99640-2344
+              </a>
+              <p className="text-gray-500 text-sm mt-1">Atendimento via WhatsApp disponível.</p>
+            </div>
+          </div>
+
           <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
             <Mail className="w-6 h-6 text-red-500 mt-0.5" />
             <div>
