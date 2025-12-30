@@ -1,4 +1,4 @@
-import { ChevronDown, Mail, MessageCircle, Phone } from "lucide-react"
+import { ChevronDown, Mail, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
                 }}
               />
             </div>
-            <h3 className="font-semibold text-sm mb-1">MATERIAL DE ALTA QUALIDADE </h3>
+            <h3 className="font-semibold text-sm mb-1">TITÂNIO PURO</h3>
           </div>
 
           <div className="text-center">
@@ -27,7 +27,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <h3 className="font-semibold text-sm mb-1">ALTA DURABILIDADE</h3>
+            <h3 className="font-semibold text-sm mb-1">DURABILIDADE VITALÍCIA</h3>
           </div>
 
           <div className="text-center">
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <h3 className="font-semibold text-sm mb-1">SUPERFÍCIE HIGIÊNICA E LIVRE DE BPA</h3>
+            <h3 className="font-semibold text-sm mb-1">ANTIBACTERIANO E LIVRE DE BPA</h3>
           </div>
         </div>
       </div>
@@ -62,12 +62,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">
-              TITAN<span className="text-red-500">CHEF</span>
+              KATU<span className="text-red-500">CHEF</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto leading-relaxed">
-              A tábua de corte TitanChef oferece uma superfície atóxica, higiênica e adequada para facas. Sua parceira
-              em todas as refeições. Esqueça manchas e trocas constantes – a TitanChef mantém sua cozinha mais limpa,
-              segura e pronta para tudo, desde jantares diários, churrascos em fins de semana até aventuras de
+              A tábua de corte Katuchef oferece uma superfície atóxica, higiênica e adequada para facas. Sua parceira em
+              todas as refeições. Esqueça bactérias, manchas e trocas constantes – a Katuchef mantém sua cozinha mais
+              limpa, segura e pronta para tudo, desde jantares diários, churrascos em fins de semana até aventuras de
               acampamento.
             </p>
           </div>
@@ -78,15 +78,11 @@ export default function Footer() {
             <div className="space-y-4 max-w-md mx-auto">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gray-400" />
-                <span>Envie-nos um e-mail em: info@titanchefcut.com</span>
+                <span>Envie-nos um e-mail em: info@katucheftitanio.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <MessageCircle className="w-5 h-5 text-gray-400" />
                 <span>Chat ao vivo das 9:00 às 18:00</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-gray-400" />
-                <span>WhatsApp: +55 27 99640-2344</span>
               </div>
             </div>
           </div>
@@ -134,10 +130,10 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-8">
             <div className="text-center mb-6">
               <p className="text-gray-400 text-sm mb-2">
-                TitanChef é uma marca operada por Anor Commerce LLC. Endereço: 1209 Mountain Road Place Northeast,
+                Katuchef é uma marca operada por Anor Commerce LLC. Endereço: 1209 Mountain Road Place Northeast,
                 Albuquerque, New Mexico, 87110, USA.
               </p>
-              <p className="text-gray-400 text-sm mb-4">© 2025 TitanChef | Todos os direitos reservados</p>
+              <p className="text-gray-400 text-sm mb-4">© 2025 Katuchef | Todos os direitos reservados</p>
               <div className="flex justify-center items-center gap-4 flex-wrap">
                 <img
                   src="https://mk6n6kinhajxg1fp.public.blob.vercel-storage.com/Comum%20/card-pix.svg"

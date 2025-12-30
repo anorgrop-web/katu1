@@ -4,29 +4,29 @@ import { useState } from "react"
 
 const faqs = [
   {
-    question: "Quais São Os Benefícios De Usar A Tábua De Corte TitanChef?",
+    question: "Quais São Os Benefícios De Usar A Tábua De Corte Katuchef?",
     answer:
-      "A tábua de corte TitanChef é altamente durável, resistente a arranhões e amassados, o que garante longevidade. A superfície de titânio não porosa facilita a limpeza e proporciona um ambiente higiênico para o preparo de alimentos. Essas tábuas são delicadas com as facas, ajudando a manter o fio da lâmina ao longo do tempo.",
+      "A tábua de corte Katuchef é altamente durável, resistente a arranhões e amassados, o que garante longevidade. A superfície de titânio não porosa previne o acúmulo de bactérias e permite um ambiente higiênico para o preparo de alimentos. Essas tábuas são delicadas com as facas, ajudando a manter o fio da lâmina ao longo do tempo.",
   },
   {
-    question: "A Tábua De Corte TitanChef É Segura Para Uso?",
+    question: "A Tábua De Corte Katuchef É Segura Para Uso?",
     answer:
-      "Sim, o TitanChef é seguro para todos os tipos de preparo de alimentos. O material de titânio não é tóxico e não libera substâncias químicas nocivas para os alimentos. Sua natureza não porosa facilita a limpeza, tornando-o uma escolha higiênica para sua cozinha.",
+      "Sim, o Katuchef é seguro para todos os tipos de preparo de alimentos. O material de titânio não é tóxico e não libera substâncias químicas nocivas para os alimentos. Sua natureza não porosa também significa que não abriga bactérias, tornando-o uma escolha higiênica para sua cozinha.",
   },
   {
-    question: "Como Faço A Limpeza E A Manutenção Do Meu TitanChef?",
+    question: "Como Faço A Limpeza E A Manutenção Do Meu Katuchef?",
     answer:
       "Após cada uso, lave com água morna e sabão neutro e seque imediatamente com um pano macio para evitar manchas de água. Evite usar produtos de limpeza abrasivos ou esponjas de aço, pois podem danificar a superfície. A limpeza regular ajudará a manter sua aparência e higiene.",
   },
   {
-    question: "Usar A Tábua De Corte TitanChef Deixará Minhas Facas Cegas?",
+    question: "Usar A Tábua De Corte Katuchef Deixará Minhas Facas Cegas?",
     answer:
-      "Não, o TitanChef foi projetado para ser delicado com suas facas. A superfície de titânio minimiza o desgaste das lâminas e ajuda a manter suas facas afiadas por mais tempo em comparação com superfícies mais duras, como vidro ou cerâmica.",
+      "Não, o Katuchef foi projetado para ser delicado com suas facas. A superfície de titânio minimiza o desgaste das lâminas e ajuda a manter suas facas afiadas por mais tempo em comparação com superfícies mais duras, como vidro ou cerâmica.",
   },
   {
-    question: "As Placas TitanChef São Resistentes Ao Calor?",
+    question: "As Placas Katuchef São Resistentes Ao Calor?",
     answer:
-      "Sim, as tábuas de corte TitanChef têm excelente resistência ao calor. Você pode colocar panelas ou frigideiras quentes diretamente sobre a tábua com segurança, sem se preocupar com deformações ou danos.",
+      "Sim, as tábuas de corte Katuchef têm excelente resistência ao calor. Você pode colocar panelas ou frigideiras quentes diretamente sobre a tábua com segurança, sem se preocupar com deformações ou danos.",
   },
 ]
 

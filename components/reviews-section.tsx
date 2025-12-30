@@ -1,14 +1,7 @@
 "use client"
 
 import { useState } from "react"
-
-const formatName = (fullName: string) => {
-  const parts = fullName.trim().replace(/\.$/, "").split(" ")
-  if (parts.length === 1) return parts[0]
-  const firstName = parts[0]
-  const lastInitial = parts[parts.length - 1].charAt(0).toUpperCase()
-  return `${firstName} ${lastInitial}.`
-}
+import Image from "next/image"
 
 const ReviewsSection = () => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
@@ -16,20 +9,24 @@ const ReviewsSection = () => {
   const reviews = [
     {
       id: 1,
-      name: "Luísa Paliciano",
+      name: "LuÍsa Paliciano.",
+      avatar: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/MV9MaXNhLmpwZw-w_120-h_120-fit_crop.jpg",
       rating: 5,
       daysAgo: 6,
       verified: true,
       recommended: true,
       title: "Ótimo para chefs do dia a dia",
       content:
-        "Cozinho todos os dias, e o TitanChef foi a melhor atualização para a nossa cozinha. É leve, fácil de limpar e adoro que não deforme nem manche como minhas antigas tábuas de plástico/madeira.",
+        "Cozinho todos os dias, e o Katuchef foi a melhor atualização para a nossa cozinha. É leve, fácil de limpar e adoro que não deforme nem manche como minhas antigas tábuas de plástico/madeira.",
+      
       helpful: 24,
       notHelpful: 0,
     },
     {
       id: 2,
-      name: "Amanda Vicentino",
+      name: "Amanda Vicentino.",
+      avatar:
+        "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/Ml9BbWFuZGEtVi5qcGc-w_120-h_120-fit_crop.jpg",
       rating: 5,
       daysAgo: 5,
       verified: true,
@@ -42,7 +39,8 @@ const ReviewsSection = () => {
     },
     {
       id: 3,
-      name: "João Luis",
+      name: "João Luis.",
+      avatar: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/M19Kb2huLUwuanBn-w_120-h_120-fit_crop.jpg",
       rating: 5,
       daysAgo: 5,
       verified: true,
@@ -55,20 +53,22 @@ const ReviewsSection = () => {
     },
     {
       id: 4,
-      name: "Christina Kill",
+      name: "Christina Kill.",
+      avatar: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/Q2hyaXN0aWUtSy5qcGc-w_120-h_120-fit_crop.jpg",
       rating: 4,
       daysAgo: 4,
       verified: true,
       recommended: true,
       title: "Cozinha mais limpa e segura",
       content:
-        "Depois de aprender sobre os problemas das tábuas de plástico com marcas de corte, mudei para TitanChef. Me sinto muito melhor sabendo que estou preparando comida em uma superfície higiênica. Além disso, é muito fácil de limpar.",
+        "Depois de aprender a quantidade de bactérias que as tábuas de plástico podem reter, mudei para Katuchef. Me sinto muito melhor sabendo que estou preparando comida em uma superfície higiênica. Além disso, é muito fácil lavar as ranhuras da escova por horas.",
       helpful: 14,
       notHelpful: 0,
     },
     {
       id: 5,
-      name: "Danielle Silva",
+      name: "Danielle S.",
+      avatar: "/professional-woman.png",
       rating: 5,
       daysAgo: 3,
       verified: true,
@@ -81,40 +81,43 @@ const ReviewsSection = () => {
     },
     {
       id: 6,
-      name: "Jamie Vasconcelos",
+      name: "Jamie V.",
+      avatar: "/person-kitchen.png",
       rating: 5,
       daysAgo: 2,
       verified: true,
       recommended: true,
-      title: "Qualidade excepcional",
+      title: "Vai durar a vida toda",
       content:
-        "Já usei muitas tábuas de corte ao longo dos anos, mas a TitanChef é única, sério. Ela é praticamente indestrutível, e adoro saber que não terei que substituí-la tão cedo.",
+        "Já usei muitas tábuas de corte ao longo dos anos, mas a Katuchef é única, sério. Ela é praticamente indestrutível, e adoro saber que não terei que substituí-la tão cedo.",
       helpful: 12,
       notHelpful: 0,
     },
     {
       id: 7,
-      name: "Mônica Santos",
+      name: "Mônica S.",
+      avatar: "/woman-chef-professional.png",
       rating: 5,
       daysAgo: 2,
       verified: true,
       recommended: true,
       title: "Incrível para cozinhas movimentadas",
       content:
-        "Tenho um pequeno negócio de buffet, e o TitanChef tem sido perfeito para manter tudo limpo e eficiente. Não mancha, não cheira e é resistente o suficiente para suportar o uso constante. Nota 10/10.",
+        "Tenho um pequeno negócio de buffet, e o Katuchef tem sido perfeito para manter tudo limpo e eficiente. Não mancha, não cheira e é resistente o suficiente para suportar o uso constante. Nota 10/10.",
       helpful: 7,
       notHelpful: 0,
     },
     {
       id: 8,
-      name: "Taya Kowalski",
+      name: "Taya K.",
+      avatar: "/young-woman-smiling.png",
       rating: 5,
       daysAgo: 1,
       verified: true,
       recommended: true,
       title: "Ferramenta excelente e acessível",
       content:
-        "É lindo, funcional e deixa minha cozinha com um toque muito mais sofisticado. Não imaginei que uma tábua de corte pudesse ficar tão bonita, mas TitanChef me provou o contrário, haha.",
+        "É lindo, funcional e deixa minha cozinha com um toque muito mais sofisticado. Não imaginei que uma tábua de corte pudesse ficar tão bonita, mas Katuchef me provou o contrário, haha.",
       helpful: 9,
       notHelpful: 0,
     },
@@ -160,8 +163,12 @@ const ReviewsSection = () => {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Usuários felizes com a TitanChef</h2>
-          <p className="text-lg text-gray-600 mb-6">Leia as avaliações de clientes satisfeitos com a TitanChef</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Milhares de usuários felizes do Katuchef
+          </h2>
+          <p className="text-lg text-gray-600 mb-6">
+            Leia as avaliações de clientes satisfeitos da Katuchef ao redor do mundo!
+          </p>
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-12"></div>
         </div>
 
@@ -188,16 +195,16 @@ const ReviewsSection = () => {
                   />
                 </svg>
               </div>
-              <p className="text-gray-600 mb-6">{""}</p>
+              <p className="text-gray-600 mb-6">1.888 avaliações</p>
 
               {/* Rating Bars */}
               <div className="space-y-2">
                 {[
-                  { stars: 5, percentage: 60 },
-                  { stars: 4, percentage: 39 },
-                  { stars: 3, percentage: 1 },
-                  { stars: 2, percentage: 0.2 },
-                  { stars: 1, percentage: 0 },
+                  { stars: 5, count: 1134, percentage: 60 },
+                  { stars: 4, count: 736, percentage: 39 },
+                  { stars: 3, count: 14, percentage: 1 },
+                  { stars: 2, count: 4, percentage: 0.2 },
+                  { stars: 1, count: 0, percentage: 0 },
                 ].map((rating) => (
                   <div key={rating.stars} className="flex items-center gap-2 text-sm">
                     <span className="w-2">{rating.stars}</span>
@@ -205,6 +212,7 @@ const ReviewsSection = () => {
                     <div className="flex-1 bg-gray-200 rounded-full h-2">
                       <div className="bg-gray-400 h-2 rounded-full" style={{ width: `${rating.percentage}%` }}></div>
                     </div>
+                    <span className="w-12 text-right text-gray-600">{rating.count}</span>
                   </div>
                 ))}
               </div>
@@ -234,6 +242,13 @@ const ReviewsSection = () => {
                   ))}
                 </div>
               </div>
+
+              <button className="w-full md:w-auto px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+                Escrever uma avaliação
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -243,13 +258,19 @@ const ReviewsSection = () => {
           {reviews.slice(0, 4).map((review) => (
             <div key={review.id} className="bg-white rounded-lg p-6 shadow-sm">
               <div className="flex gap-4">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-600 font-semibold text-lg">{review.name.charAt(0).toUpperCase()}</span>
+                <div className="flex-shrink-0" style={{ width: "50px", height: "50px" }}>
+                  <Image
+                    src={review.avatar || "/placeholder.svg"}
+                    alt={review.name}
+                    width={50}
+                    height={50}
+                    className="rounded-full object-cover"
+                  />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-start justify-between mb-2">
                     <div>
-                      <h4 className="font-semibold text-gray-900">{formatName(review.name)}</h4>
+                      <h4 className="font-semibold text-gray-900">{review.name}</h4>
                       <div className="flex items-center gap-2 text-sm text-gray-600">
                         <CheckIcon />
                         <span>Cliente verificado</span>
@@ -274,6 +295,18 @@ const ReviewsSection = () => {
 
                   <h5 className="font-semibold text-gray-900 mb-2">{review.title}</h5>
                   <p className="text-gray-700 mb-4">{review.content}</p>
+
+                  {review.image && (
+                    <div className="mb-4">
+                      <Image
+                        src={review.image || "/placeholder.svg"}
+                        alt="Review image"
+                        width={120}
+                        height={120}
+                        className="rounded-lg"
+                      />
+                    </div>
+                  )}
 
                   <div className="flex items-center gap-4 text-sm text-gray-600">
                     <span>Esta avaliação foi útil?</span>
@@ -311,15 +344,19 @@ const ReviewsSection = () => {
                   <div key={review.id} className="w-full flex-shrink-0 px-2">
                     <div className="bg-white rounded-lg p-6 shadow-sm">
                       <div className="flex gap-4">
-                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-                          <span className="text-gray-600 font-semibold text-lg">
-                            {review.name.charAt(0).toUpperCase()}
-                          </span>
+                        <div className="flex-shrink-0" style={{ width: "50px", height: "50px" }}>
+                          <Image
+                            src={review.avatar || "/placeholder.svg"}
+                            alt={review.name}
+                            width={50}
+                            height={50}
+                            className="rounded-full object-cover"
+                          />
                         </div>
                         <div className="flex-1">
                           <div className="flex items-start justify-between mb-2">
                             <div>
-                              <h4 className="font-semibold text-gray-900">{formatName(review.name)}</h4>
+                              <h4 className="font-semibold text-gray-900">{review.name}</h4>
                               <div className="flex items-center gap-2 text-sm text-gray-600">
                                 <CheckIcon />
                                 <span>Cliente verificado</span>
@@ -344,6 +381,18 @@ const ReviewsSection = () => {
 
                           <h5 className="font-semibold text-gray-900 mb-2">{review.title}</h5>
                           <p className="text-gray-700 mb-4">{review.content}</p>
+
+                          {review.image && (
+                            <div className="mb-4">
+                              <Image
+                                src={review.image || "/placeholder.svg"}
+                                alt="Review image"
+                                width={120}
+                                height={120}
+                                className="rounded-lg"
+                              />
+                            </div>
+                          )}
 
                           <div className="flex items-center gap-4 text-sm text-gray-600">
                             <span>Esta avaliação foi útil?</span>

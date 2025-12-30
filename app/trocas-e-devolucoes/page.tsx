@@ -22,7 +22,7 @@ export default function TrocasPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Política de Trocas, Devoluções e Reembolso</h1>
 
           <p>
-            A <strong>TitanChef</strong> (operada pela Anor Commerce LLC) preza pela qualidade de seus produtos de
+            A <strong>Katuchef</strong> (operada pela Anor Commerce LLC) preza pela qualidade de seus produtos de
             titânio e pela satisfação total de seus clientes.
           </p>
 
@@ -45,8 +45,7 @@ export default function TrocasPage() {
           </p>
           <ul className="list-disc pl-5">
             <li>
-              <strong>Solicitação:</strong> Envie um e-mail para info@titanchefcut.com ou entre em contato pelo
-              WhatsApp: +55 27 99640-2344.
+              <strong>Solicitação:</strong> Envie um e-mail para info@katucheftitanio.com.
             </li>
             <li>
               <strong>Envio:</strong> Enviaremos instruções para envio ao nosso parceiro logístico nacional.

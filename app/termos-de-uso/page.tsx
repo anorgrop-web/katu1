@@ -28,7 +28,7 @@ export default function TermosPage() {
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">1. Política de Envio (Estoque Nacional)</h3>
           <p>
-            Todos os produtos TitanChef são despachados diretamente do nosso <strong>estoque próprio no Brasil</strong>.
+            Todos os produtos Katuchef são despachados diretamente do nosso <strong>estoque próprio no Brasil</strong>.
             Isso garante rapidez e isenção de taxas alfandegárias para o cliente final.
           </p>
           <p>
@@ -44,8 +44,7 @@ export default function TermosPage() {
           <h3 className="text-xl font-bold text-gray-900 mt-4">2. Suporte ao Cliente</h3>
           <p>Nosso atendimento funciona em horário comercial.</p>
           <ul className="list-disc pl-5">
-            <li>E-mail: info@titanchefcut.com</li>
-            <li>WhatsApp: +55 27 99640-2344</li>
+            <li>E-mail: info@katucheftitanio.com</li>
           </ul>
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">3. Legislação Aplicável</h3>

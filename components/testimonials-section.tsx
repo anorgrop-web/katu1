@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
       name: "Olívia",
       video: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/Depoimento%20katuchef%202.mp4",
       rating: 5,
-      text: "Eu tinha pavor de cortar legumes porque minhas facas ficavam cegas muito rápido nas minhas tábuas antigas. Com a tábua de corte TitanChef, minhas facas ficam afiadas e eu não preciso ficar pegando o amolador. Você SIMPLESMENTE TEM que ter isso.",
+      text: "Eu tinha pavor de cortar legumes porque minhas facas ficavam cegas muito rápido nas minhas tábuas antigas. Com a tábua de corte Katuchef, minhas facas ficam afiadas e eu não preciso ficar pegando o amolador. Você SIMPLESMENTE TEM que ter isso.",
     },
     {
       name: "Luciano",
@@ -47,17 +47,17 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="hidden w-full py-16 px-4 bg-gray-50">
+    <section className="w-full py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Satisfação garantida com TitanChef</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">Satisfação garantida com Katuchef</h2>
           <p className="text-gray-600 text-lg mb-6">Redefina sua experiência na cozinha</p>
           <div className="w-16 h-1 bg-gray-400 mx-auto mb-8"></div>
           <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Milhares de clientes satisfeitos confiam na TitanChef por sua durabilidade e segurança. Esqueça as tábuas de
-            corte que acumulam marcas e as trocas constantes. Com esta tábua de corte de titânio de alta qualidade, você
-            pode preparar refeições com confiança, sabendo que tem uma tábua de corte mais limpa e durável.
+            Milhares de clientes satisfeitos confiam na Katuchef por sua durabilidade e segurança. Esqueça as tábuas de
+            corte propensas a bactérias e as trocas constantes. Com esta tábua de corte de titânio de alta qualidade,
+            você pode preparar refeições com confiança, sabendo que tem uma tábua de corte mais limpa e durável.
           </p>
         </div>
 

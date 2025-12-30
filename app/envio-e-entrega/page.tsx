@@ -22,7 +22,7 @@ export default function EnvioEntregaPage() {
           <h1 className="text-3xl font-bold text-gray-900 mb-6">Política de Envio e Entrega</h1>
 
           <p>
-            A <strong>TitanChef</strong> (operada pela Anor Commerce LLC) trabalha para que você receba seu produto de
+            A <strong>Katuchef</strong> (operada pela Anor Commerce LLC) trabalha para que você receba seu produto de
             forma rápida e segura.
           </p>
 
@@ -60,7 +60,7 @@ export default function EnvioEntregaPage() {
 
           <h3 className="text-xl font-bold text-gray-900 mt-4">5. Endereço de Entrega</h3>
           <p>
-            Certifique-se de que o endereço informado no momento da compra está correto e completo. A TitanChef não se
+            Certifique-se de que o endereço informado no momento da compra está correto e completo. A Katuchef não se
             responsabiliza por entregas em endereços incorretos ou incompletos fornecidos pelo cliente.
           </p>
 
@@ -69,14 +69,9 @@ export default function EnvioEntregaPage() {
             Caso ocorra algum problema com a entrega (extravio, dano durante o transporte, etc.), entre em contato
             conosco:
           </p>
-          <ul className="list-disc pl-5">
-            <li>
-              <strong>E-mail:</strong> info@titanchefcut.com
-            </li>
-            <li>
-              <strong>WhatsApp:</strong> +55 27 99640-2344
-            </li>
-          </ul>
+          <p>
+            <strong>E-mail:</strong> info@katucheftitanio.com
+          </p>
           <p>Nossa equipe está pronta para resolver qualquer situação da melhor forma possível.</p>
         </div>
       </div>

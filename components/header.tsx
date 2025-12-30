@@ -15,7 +15,7 @@ export default function Header() {
     <>
       {/* Top Banner */}
       <div className="bg-black text-white text-center py-2 px-4">
-        <p className="text-sm font-medium">OFERTA ESPECIAL</p>
+        <p className="text-sm font-medium">OFERTA ESPECIAL POR TEMPO LIMITADO | ATÉ 70% DE DESCONTO</p>
       </div>
 
       {/* Benefits Bar - Desktop */}
@@ -86,7 +86,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex items-center">
               <span className="text-2xl font-bold">
-                <span className="text-black">TITAN</span>
+                <span className="text-black">KATU</span>
                 <span className="text-red-600">CHEF</span>
               </span>
             </div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { ArrowLeft, Mail, Clock, Phone } from "lucide-react"
+import { ArrowLeft, Mail, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function ContatoPage() {
@@ -24,22 +24,11 @@ export default function ContatoPage() {
 
         <div className="space-y-6">
           <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
-            <Phone className="w-6 h-6 text-red-500 mt-0.5" />
-            <div>
-              <h2 className="font-semibold text-gray-900 mb-1">Telefone / WhatsApp</h2>
-              <a href="tel:+5527996402344" className="text-red-500 hover:underline">
-                +55 27 99640-2344
-              </a>
-              <p className="text-gray-500 text-sm mt-1">Atendimento via WhatsApp disponível.</p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
             <Mail className="w-6 h-6 text-red-500 mt-0.5" />
             <div>
               <h2 className="font-semibold text-gray-900 mb-1">E-mail</h2>
-              <a href="mailto:info@titanchefcut.com" className="text-red-500 hover:underline">
-                info@titanchefcut.com
+              <a href="mailto:info@katucheftitanio.com" className="text-red-500 hover:underline">
+                info@katucheftitanio.com
               </a>
               <p className="text-gray-500 text-sm mt-1">Responderemos em até 24 horas úteis.</p>
             </div>
@@ -57,7 +46,7 @@ export default function ContatoPage() {
 
         <div className="mt-10 pt-6 border-t border-gray-200">
           <p className="text-gray-500 text-sm">
-            <strong>TitanChef</strong> é uma marca operada por Anor Commerce LLC.
+            <strong>Katuchef</strong> é uma marca operada por Anor Commerce LLC.
             <br />
             Endereço: 1209 Mountain Road Place Northeast, Albuquerque, New Mexico, 87110, USA.
           </p>
