@@ -129,7 +129,7 @@ export default function Footer() {
           {/* Copyright and Payment Methods */}
           <div className="border-t border-gray-800 pt-8">
             <div className="text-center mb-6">
-              <p className="text-gray-400 text-sm mb-2">
+              <p className="hidden md:block text-gray-400 text-sm mb-2">
                 Katuchef é uma marca operada por Anor Commerce LLC. Endereço: 1209 Mountain Road Place Northeast,
                 Albuquerque, New Mexico, 87110, USA.
               </p>
