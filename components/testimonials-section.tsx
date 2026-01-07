@@ -1,49 +1,57 @@
 "use client"
 
 import type React from "react"
-
-import { useState, useRef } from "react"
+import { useState, useRef, useCallback, useEffect } from "react"
+import YouTube, { type YouTubePlayer, type YouTubeEvent } from "react-youtube"
 
 export default function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [unmutedIndex, setUnmutedIndex] = useState<number | null>(null)
 
   const testimonials = [
     {
       name: "Sara",
-      video: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/Depoimento%20katuchef%201.mp4",
+      youtubeId: "BSGvtGJfZjs",
       rating: 5,
       text: "Adoro esta tábua de corte! É muito mais fácil de limpar do que a minha antiga tábua de madeira – chega de esfregar comida para tirar marcas de faca. Depois de 6 meses de uso intenso, ela ainda parece novinha em folha. Me sinto muito melhor sabendo que estou preparando um churrasco em uma superfície atóxica e antibacteriana!",
     },
     {
       name: "Olívia",
-      video: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/Depoimento%20katuchef%202.mp4",
+      youtubeId: "TFSFMjsTHpk",
       rating: 5,
       text: "Eu tinha pavor de cortar legumes porque minhas facas ficavam cegas muito rápido nas minhas tábuas antigas. Com a tábua de corte Katuchef, minhas facas ficam afiadas e eu não preciso ficar pegando o amolador. Você SIMPLESMENTE TEM que ter isso.",
     },
     {
       name: "Luciano",
-      video: "https://dxy4adpuoflk7uxq.public.blob.vercel-storage.com/Tabua/depoimento%20katuchef%203.mp4",
+      youtubeId: "1xTWDdXIfeY",
       rating: 5,
       text: '"Troque a famosa tabua de madeira por essa de titanio. Realmente bem melhor, muito mais apresentável, muito mais higiênico, facil de limpar. Deixei as de madeira só de enfeite mesmo"',
     },
   ]
 
-  const StarIcon = () => (
-    <svg className="w-4 h-4 fill-yellow-400" viewBox="0 0 20 20">
-      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-    </svg>
-  )
+  const handleSlideChange = (newSlide: number) => {
+    setUnmutedIndex(null)
+    setCurrentSlide(newSlide)
+  }
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length)
+    handleSlideChange((currentSlide + 1) % testimonials.length)
   }
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+    handleSlideChange((currentSlide - 1 + testimonials.length) % testimonials.length)
   }
 
   const goToSlide = (index: number) => {
-    setCurrentSlide(index)
+    handleSlideChange(index)
+  }
+
+  const handleToggleMute = (index: number) => {
+    if (unmutedIndex === index) {
+      setUnmutedIndex(null)
+    } else {
+      setUnmutedIndex(index)
+    }
   }
 
   return (
@@ -64,7 +72,13 @@ export default function TestimonialsSection() {
         {/* Desktop Grid */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <VideoTestimonialCard key={index} testimonial={testimonial} />
+            <VideoTestimonialCard
+              key={index}
+              testimonial={testimonial}
+              index={index}
+              isMuted={unmutedIndex !== index}
+              onToggleMute={handleToggleMute}
+            />
           ))}
         </div>
 
@@ -78,7 +92,12 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-4">
                   <div className="max-w-sm mx-auto">
-                    <VideoTestimonialCard testimonial={testimonial} />
+                    <VideoTestimonialCard
+                      testimonial={testimonial}
+                      index={index}
+                      isMuted={unmutedIndex !== index}
+                      onToggleMute={handleToggleMute}
+                    />
                   </div>
                 </div>
               ))}
@@ -124,109 +143,109 @@ export default function TestimonialsSection() {
 
 function VideoTestimonialCard({
   testimonial,
-}: { testimonial: { name: string; video: string; rating: number; text: string } }) {
-  const [isMuted, setIsMuted] = useState(true)
-  const [isPlaying, setIsPlaying] = useState(true)
-  const videoRef = useRef<HTMLVideoElement>(null)
+  index,
+  isMuted,
+  onToggleMute,
+}: {
+  testimonial: { name: string; youtubeId: string; rating: number; text: string }
+  index: number
+  isMuted: boolean
+  onToggleMute: (index: number) => void
+}) {
+  const playerRef = useRef<YouTubePlayer | null>(null)
+
+  const onReady = useCallback((event: YouTubeEvent) => {
+    playerRef.current = event.target
+    event.target.mute()
+    event.target.playVideo()
+  }, [])
+
+  useEffect(() => {
+    if (playerRef.current) {
+      if (isMuted) {
+        playerRef.current.mute()
+      } else {
+        playerRef.current.unMute()
+        playerRef.current.seekTo(0, true)
+        playerRef.current.playVideo()
+      }
+    }
+  }, [isMuted])
 
   const toggleMute = (e: React.MouseEvent) => {
     e.stopPropagation()
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted
-      setIsMuted(!isMuted)
-    }
+    onToggleMute(index)
   }
 
-  const togglePlayPause = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause()
-      } else {
-        videoRef.current.play()
-      }
-      setIsPlaying(!isPlaying)
-    }
+  const opts = {
+    width: "100%",
+    height: "100%",
+    playerVars: {
+      autoplay: 1,
+      mute: 1,
+      controls: 0,
+      loop: 1,
+      playlist: testimonial.youtubeId,
+      modestbranding: 1,
+      playsinline: 1,
+      rel: 0,
+      showinfo: 0,
+      fs: 0,
+      disablekb: 1,
+    },
   }
-
-  const handlePlay = () => setIsPlaying(true)
-  const handlePause = () => setIsPlaying(false)
 
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-      {/* Video Container */}
-      <div className="relative cursor-pointer" onClick={togglePlayPause}>
-        <video
-          ref={videoRef}
-          src={testimonial.video}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-auto"
-          onPlay={handlePlay}
-          onPause={handlePause}
-        />
-
-        {/* Video Controls Overlay */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Mute/Unmute Button */}
-          <button
-            onClick={toggleMute}
-            className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 transition-colors pointer-events-auto"
-            aria-label={isMuted ? "Desmutar" : "Mutar"}
-          >
-            {isMuted ? (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
-                />
-              </svg>
-            ) : (
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                />
-              </svg>
-            )}
-          </button>
-
-          <div
-            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/60 text-white rounded-full p-4 transition-opacity duration-300 ${
-              isPlaying ? "opacity-0" : "opacity-100"
-            }`}
-            aria-label={isPlaying ? "Pausar" : "Reproduzir"}
-          >
-            {isPlaying ? (
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-              </svg>
-            ) : (
-              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            )}
-          </div>
+      {/* Video Container - aspect ratio 9:16 para Shorts */}
+      <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+        <div className="absolute inset-0">
+          <YouTube
+            videoId={testimonial.youtubeId}
+            opts={opts}
+            onReady={onReady}
+            className="w-full h-full"
+            iframeClassName="w-full h-full"
+          />
         </div>
+
+        {/* Mute/Unmute Button Overlay */}
+        <button
+          onClick={toggleMute}
+          className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 transition-colors z-10"
+          aria-label={isMuted ? "Desmutar e reiniciar" : "Mutar"}
+        >
+          {isMuted ? (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"
+              />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+              />
+            </svg>
+          )}
+        </button>
       </div>
 
       {/* Content */}
       <div className="p-6 text-center">
-        {/* Name */}
         <h3 className="text-xl font-semibold text-black mb-3">{testimonial.name}</h3>
-
-        {/* Stars */}
         <div className="flex justify-center gap-1">
           {[...Array(testimonial.rating)].map((_, i) => (
             <svg key={i} className="w-4 h-4 fill-yellow-400" viewBox="0 0 20 20">
